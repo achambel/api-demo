@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Start Rails server",
+      "type": "Ruby",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "program": "${workspaceRoot}/bin/rails",
+      "args": [
+        "server",
+        "-p",
+        "3000"
+      ]
+    },
+    {
+      "name": "Debug Rails server",
+      "type": "Ruby",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "useBundler": true,
+      "pathToBundler": "/home/adriano/.rbenv/shims/bundle",
+      "pathToRDebugIDE": "/home/adriano/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/ruby-debug-ide-0.6.1",
+      "program": "${workspaceRoot}/bin/rails",
+      "args": [
+        "server",
+        "-p",
+        "3000"
+      ],
+      "showDebuggerOutput": true
+    }
+  ]
+}
